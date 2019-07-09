@@ -5,7 +5,7 @@
 #include "tlpi_hdr.h"
 
 void
-printfSigset(FILE *of, const char *prefix, const sigset_t *sigset)
+printSigset(FILE *of, const char *prefix, const sigset_t *sigset)
 {
     int sig, cnt;
 
