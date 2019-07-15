@@ -1,1 +1,1 @@
-void printWaitStatus(const char *msg, int status)
+void printWaitStatus(const char *msg, int status);

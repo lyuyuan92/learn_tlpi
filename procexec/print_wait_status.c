@@ -14,7 +14,7 @@ printWaitStatus(const char *msg, int status)
         printf("child exited, status=%ld\n", WEXITSTATUS(status));
     } else if (WIFSIGNALED(status)) {
         printf("child killed by signal %d (%s)",
-                WTERMSIG(status), strsignal(STERMSIG(status)));
+                WTERMSIG(status), strsignal(WTERMSIG(status)));
 #ifdef WCOREDUMP
         if (WCOREDUMP(status))
             printf(" (core dumper)");
